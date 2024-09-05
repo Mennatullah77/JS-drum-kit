@@ -30,14 +30,14 @@ body,html{
     width: 10rem;
     text-align: center;
     color: white;
-    background: rgba(0,0,0,0.4);
+    background: rgba(235, 81, 81, 0.4);
     text-shadow: 0 0 .5rem black;
 }
 
 .playing{
     transform: scale(1.1);
-    border-color: #ffc600;
-    box-shadow: 0 0 1rem #ffc600;
+    border-color: #a99feb;
+    box-shadow: 0 0 1rem #a99feb;
 }
 
 
@@ -49,6 +49,6 @@ kbd{
 .sound {
     font-size: 1.2rem;
     letter-spacing: .1rem;
-    color: #ffc600;
+    color: #a99feb;
 }
 
