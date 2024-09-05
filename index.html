@@ -48,18 +48,26 @@
     </div>
 
 
-    <audio data-key="A" src="./sounds/boom.wav"> </audio>
-    <audio data-key="B" src="./sounds/clap.wav"> </audio>
-    <audio data-key="C" src="./sounds/hihat.wav"> </audio>
-    <audio data-key="D" src="./sounds/kick.wav"> </audio>
-    <audio data-key="E" src="./sounds/openhat.wav"> </audio>
-    <audio data-key="F" src="./sounds/ride.wav"> </audio>
-    <audio data-key="G" src="./sounds/snare.wav"> </audio>
-    <audio data-key="H" src="./sounds/tink.wav"> </audio>
-    <audio data-key="I" src="./sounds/tom.wav"> </audio>
+    <audio data-key="65" src="./sounds/boom.wav"> </audio>
+    <audio data-key="66" src="./sounds/clap.wav"> </audio>
+    <audio data-key="67" src="./sounds/hihat.wav"> </audio>
+    <audio data-key="68" src="./sounds/kick.wav"> </audio>
+    <audio data-key="69" src="./sounds/openhat.wav"> </audio>
+    <audio data-key="70" src="./sounds/ride.wav"> </audio>
+    <audio data-key="71" src="./sounds/snare.wav"> </audio>
+    <audio data-key="72" src="./sounds/tink.wav"> </audio>
+    <audio data-key="73" src="./sounds/tom.wav"> </audio>
 
 
 
-    
+<script>
+    document.addEventListener("keydown" , function(e)  {
+        const audio = document.querySelector(`audio[data-key= "${e.keyCode}"]`);
+        const key = document.querySelector(`div[data-key = "${e.keyCode}"]`)
+        console.log(key)
+        audio.currentTime = 0;
+        audio.play()
+    })
+</script>
 </body>
 </html>
